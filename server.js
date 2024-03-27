@@ -19,7 +19,7 @@ const options = {
 
   // This is necessary only if using the client certificate authentication.
   requestCert: true,
-  rejectUnauthorized: false,
+  rejectUnauthorized: true,
 
   // This is necessary only if the client uses the self-signed certificate.
   ca: [ fs.readFileSync('server-cert.pem') ]
